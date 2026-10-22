@@ -1,90 +1,75 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Humo" (QICS) — Milliy To'lov Tizimi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .gradient-bg { background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%); }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUMO QICS | Raqamli Portfolio</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#f2f6ff;color:#18243b}
+header{background:linear-gradient(120deg,#123da4,#477aff);color:white;padding:22px 6%}
+nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px}
+nav strong{font-size:23px}
+nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px}
+.hero{padding:75px 6%;text-align:center;background:linear-gradient(120deg,#123da4,#477aff);color:white}
+.hero h1{font-size:clamp(32px,6vw,60px);margin:0 0 15px}
+.hero p{max-width:650px;margin:0 auto 25px;line-height:1.7}
+.btn{display:inline-block;padding:13px 24px;background:#ffd34f;color:#152e66;border-radius:12px;text-decoration:none;font-weight:bold}
+main{max-width:1100px;margin:auto;padding:40px 20px}
+h2{text-align:center;margin:20px 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;border-radius:20px;padding:28px;box-shadow:0 8px 30px #173a7612}
+.card .emoji{font-size:36px}
+.card h3{font-size:20px}
+.card p{color:#52627c;line-height:1.7}
+.card a{display:inline-block;margin-top:12px;color:#245bdb;font-weight:bold;text-decoration:none}
+.tag{display:inline-block;background:#e9efff;color:#315ad0;padding:7px 12px;border-radius:20px;font-size:12px}
+section{margin-bottom:60px}
+.about{background:#e5edff;border-radius:22px;padding:35px;line-height:1.8}
+footer{background:#122852;color:white;text-align:center;padding:30px}
+@media(max-width:600px){nav{justify-content:center;text-align:center}nav a{display:inline-block;margin:7px}.hero{padding:55px 20px}.card{padding:22px}}
+</style>
 </head>
-<body class="bg-slate-50 font-sans text-gray-800">
-
-    <header class="gradient-bg text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <i class="fa-solid fa-credit-card text-3xl text-yellow-300"></i>
-                <span class="text-2xl font-bold tracking-wide">HUMO (QICS)</span>
-            </div>
-            <nav class="hidden md:flex space-x-6 font-medium">
-                <a href="#about" class="hover:text-yellow-300 transition">Biz haqimizda</a>
-                <a href="#video" class="hover:text-yellow-300 transition">3D Logo</a>
-                <a href="#presentation" class="hover:text-yellow-300 transition">Taqdimot</a>
-                <a href="#tariffs" class="hover:text-yellow-300 transition">Tariflar</a>
-                <a href="#feedback" class="hover:text-yellow-300 transition">Bog'lanish</a>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about" class="gradient-bg text-white py-16 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">"Humo" (QICS) Milliy To'lov Tizimi</h1>
-            <p class="text-lg md:text-xl opacity-90 mb-6">Xavfsiz, tezkor va zamonaviy raqamli moliyaviy xizmatlar platformasi</p>
-            <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 inline-block border border-white/20">
-                <p class="text-sm font-semibold text-yellow-200">Loyiha muallifi: <span class="text-white">Ro'zmatov Sarvarjon Axrorjon o'g'li</span></p>
-            </div>
-        </div>
-    </section>
-
-    <main class="container mx-auto px-4 py-12 space-y-12">
-        <section id="video" class="bg-white rounded-2xl p-6 card-shadow">
-            <div class="flex items-center space-x-3 mb-4">
-                <i class="fa-solid fa-play-circle text-2xl text-blue-600"></i>
-                <h2 class="text-2xl font-bold">1. Brendning 3D Video Logotipi (Google Drive)</h2>
-            </div>
-            <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden bg-black">
-                <iframe src="https://drive.google.com/file/d/1HumoQICS_3D_Logo_Video_ID/preview" width="100%" height="450" allow="autoplay" class="w-full border-0"></iframe>
-            </div>
-        </section>
-
-        <section id="presentation" class="bg-white rounded-2xl p-6 card-shadow">
-            <div class="flex items-center space-x-3 mb-4">
-                <i class="fa-solid fa-file-powerpoint text-2xl text-amber-500"></i>
-                <h2 class="text-2xl font-bold">2. Loyiha Taqdimoti (Google Slides)</h2>
-            </div>
-            <div class="rounded-xl overflow-hidden border">
-                <iframe src="https://docs.google.com/presentation/d/1HumoQICS_Presentation_Example/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="450" allowfullscreen="true" class="w-full"></iframe>
-            </div>
-        </section>
-
-        <section id="tariffs" class="bg-white rounded-2xl p-6 card-shadow">
-            <div class="flex items-center space-x-3 mb-4">
-                <i class="fa-solid fa-table text-2xl text-emerald-600"></i>
-                <h2 class="text-2xl font-bold">3. Xizmat Tariflari va Byudjet (Google Sheets)</h2>
-            </div>
-            <div class="rounded-xl overflow-hidden border">
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_HumoQICS_Tariff_Table/pubhtml?widget=true&amp;headers=false" width="100%" height="450" frameborder="0" class="w-full"></iframe>
-            </div>
-        </section>
-
-        <section id="feedback" class="bg-white rounded-2xl p-6 card-shadow">
-            <div class="flex items-center space-x-3 mb-4">
-                <i class="fa-solid fa-comments text-2xl text-purple-600"></i>
-                <h2 class="text-2xl font-bold">4. Fikr-mulohaza va Murojaat (Google Forms)</h2>
-            </div>
-            <div class="rounded-xl overflow-hidden border">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_HumoQICS_Feedback_Form/viewform?embedded=true" width="100%" height="650" frameborder="0" class="w-full">Yuklanmoqda…</iframe>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-900 text-white py-8 text-center">
-        <p class="text-lg font-semibold">"Humo" (QICS) Milliy To'lov Tizimi &copy; 2026</p>
-        <p class="text-sm text-gray-400">Bajaruvchi: Ro'zmatov Sarvarjon Axrorjon o'g'li</p>
-    </footer>
-
+<body>
+<header>
+<nav>
+<strong>💳 HUMO (QICS)</strong>
+<div><a href="#loyiha">Loyiha</a><a href="#resurslar">Resurslar</a><a href="#haqida">Biz haqimizda</a></div>
+</nav>
+</header>
+<div class="hero">
+<span class="tag">Innovatsion raqamli loyiha</span>
+<h1>HUMO QICS</h1>
+<p>Zamonaviy raqamli to‘lov texnologiyalari, innovatsion yechimlar va Google Workspace asosidagi interaktiv veb-portfolio.</p>
+<a class="btn" href="#resurslar">Loyihani ko‘rish ↓</a>
+</div>
+<main>
+<section id="loyiha">
+<h2>🚀 Loyihamiz haqida</h2>
+<div class="about">
+<strong>HUMO QICS — raqamli innovatsiyalar portfoliоsi.</strong>
+<p>Ushbu veb-sayt amaliy topshiriq doirasida yaratilgan. Loyihaning maqsadi Google Workspace resurslarini yagona interaktiv platformada jamlash, raqamli taqdimot va ma’lumotlarni zamonaviy ko‘rinishda namoyish etishdir.</p>
+</div>
+</section>
+<section id="resurslar">
+<h2>📂 Google Workspace resurslari</h2>
+<div class="grid">
+<div class="card"><div class="emoji">🎬</div><h3>3D video logotip</h3><p>HUMO QICS brendining animatsion video taqdimoti.</p><span class="tag">Google Drive — ulanish kutilmoqda</span></div>
+<div class="card"><div class="emoji">📊</div><h3>Moliyaviy jadval</h3><p>Xizmat tariflari, hisob-kitoblar va loyiha byudjeti.</p><span class="tag">Google Sheets — ulanish kutilmoqda</span></div>
+<div class="card"><div class="emoji">📽️</div><h3>Loyiha taqdimoti</h3><p>Innovatsion g‘oya, maqsadlar va rivojlanish bosqichlari.</p><span class="tag">Google Slides — ulanish kutilmoqda</span></div>
+<div class="card"><div class="emoji">📝</div><h3>Fikr-mulohaza</h3><p>Foydalanuvchilar uchun so‘rovnoma va takliflar bo‘limi.</p><span class="tag">Google Forms — ulanish kutilmoqda</span></div>
+</div>
+</section>
+<section id="haqida">
+<h2>✨ Loyihaning afzalliklari</h2>
+<div class="grid">
+<div class="card"><h3>📱 Moslashuvchan dizayn</h3><p>Telefon, planshet va kompyuter ekranlariga mos interfeys.</p></div>
+<div class="card"><h3>☁️ Bulut texnologiyalari</h3><p>Google Workspace xizmatlarini bir platformada birlashtirish imkoniyati.</p></div>
+<div class="card"><h3>🌐 GitHub Pages</h3><p>Internetda bepul joylashtiriladigan statik veb-sayt.</p></div>
+</div>
+</section>
+</main>
+<footer>© 2026 HUMO QICS | Innovatsion veb-portfolio</footer>
 </body>
 </html>
